@@ -1,0 +1,17 @@
+[
+  {
+    "uuid": "BINO-12345",
+    "businessName": "Partner A",
+    "slogan": "A trusted partner of Bino."
+  },
+  {
+    "uuid": "BINO-67890",
+    "businessName": "Partner B",
+    "slogan": "Another trusted partner."
+  },
+  {
+    "uuid": "BINO-ALPHA",
+    "businessName": "Alpha Solutions",
+    "slogan": "Bino's certified tech partner."
+  }
+]
