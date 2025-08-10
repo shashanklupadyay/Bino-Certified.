@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bino Certified Badge Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div id="verification-step">
+            <h2>Enter your Bino Business Partner ID</h2>
+            <input type="text" id="partner-id-input" placeholder="Enter ID...">
+            <button id="verify-id-btn">Verify ID</button>
+            <p id="error-message" class="error-message" style="display: none;"></p>
+        </div>
+
+        <div id="badge-generator" style="display: none;">
+            <h2>Create Your Bino Certified Badge</h2>
+            
+            <div id="badge-container">
+                <div id="badge-preview">
+                    <img id="business-logo" src="https://via.placeholder.com/150" alt="Business Logo">
+                    <div class="badge-text">
+                        <h3>Bino Certified</h3>
+                        <h1 id="business-name-display">Your Business Name</h1>
+                        <p id="business-slogan-display">A trusted partner of Bino.</p>
+                    </div>
+                    <div id="qr-code-container"></div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="form-group">
+                    <label for="business-name">Business Name:</label>
+                    <input type="text" id="business-name" value="Your Business Name">
+                </div>
+                <div class="form-group">
+                    <label for="business-slogan">Slogan:</label>
+                    <input type="text" id="business-slogan" value="A trusted partner of Bino.">
+                </div>
+                <div class="form-group">
+                    <label for="logo-upload">Upload Logo:</label>
+                    <input type="file" id="logo-upload" accept="image/*">
+                </div>
+                <button id="generate-badge-btn">Generate Badge</button>
+                <button id="download-badge-btn">Download Badge</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
